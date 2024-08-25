@@ -13,56 +13,138 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-.card__like-button:focus, .dialog-button:focus{
-  outline:none;
-  box-shadow:2px 2px 0px var(--text-color);
-  transition:0.7s ease;
+.card__like-button:focus,
+.dialog-button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px var(--text-color);
+  transition: 0.7s ease;
 }
 
-.card__like-button:focus, .dialog-button:focus{
-  box-shadow:2px 2px 0px var(--text-color);
+.card__like-button:focus,
+.dialog-button:focus {
+  box-shadow: 2px 2px 0px var(--text-color);
 }
 
-.dialog-button::after{
-  content:'';
+.dialog-button::after {
+  content: "";
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 0;
   height: 100%;
-  background-color:var(--text-color);
+  background-color: var(--text-color);
   transition: 0.5s ease-in-out;
 }
 
-.dialog-button:hover::after{
+.dialog-button:hover::after {
   transform: scaleX(1);
   width: 100%;
+  color: var(--invert-text);
 }
 
-.card__like-button:hover{
+.dialog-button:hover {
+  transform: scaleX(1);
+  color: var(--invert-text);
+}
+
+.card__like-button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--text-color);
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+  transform: scaleX(0);
+}
+
+.card__like-button:hover::after {
   transform: scaleX(1);
 }
 
-.card__like-button::after{
-  content:'';
+.close-button::after {
+  content: "";
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 0;
   height: 100%;
-  background-color:var(--text-color);
+  background-color: var(--text-color);
   transition: 0.5s ease-in-out;
 }
 
-.card__like-button:hover::after{
+.close-button:hover::after {
+  transform: scaleX(1);
   width: 100%;
+  color: var(--invert-text);
 }
 
-.main-body, .core, .sparks{
+.main-body,
+.core,
+.sparks {
   fill: none;
 }
 
-svg .core{
+.like-icon .core {
+  fill: var(--core-color);
+  transition: 0.3s linear;
+}
+
+.like-icon .main-body {
+  fill: var(--core-color);
+  transition: 0.3s linear 0.05s;
+}
+
+.like-icon:hover .core {
+  fill: var(--contour-color);
+  transition: 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--contour-color);
+  transition: 0.3s linear 0.05s;
+}
+
+.like-icon:active .core {
+  fill: var(--sparks-color);
+  transition: 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--sparks-color);
+  transition: 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--sparks-color);
+  transition: 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--sparks-color);
+  transition: 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--sparks-color);
+  transition: 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: pulse 0.3s ease-in 0.1s 1 alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s ease-in 0.3s;
+}
+
+.like-icon .heart {
+  transform-origin: center;
+}
+
+/* svg .core{
   fill:var(--core-color);
   transition:0.3s 0.03s
 }
@@ -102,30 +184,61 @@ svg:active .main-body{
   --heart-color:red;
 }
 
-.like-icon.is-liked .heart {
-  animation:pulse 0.3s ease-in 0.1s;
+@media (prefers-color-scheme:dark){
+  .main-body, .core, .sparks{
+    fill: none;
+  }
+
+  svg .core{
+    fill:var(--core-color);
+    transition:0.3s 0.03s
+  }
+  
+  svg:hover .core{
+    fill:var(--core-color);
+  }
+  
+  svg .main-body {
+    fill: var(--heart-color);
+    animation-delay:0.05s;
+    transition:0.3s;
+  }
+  
+  svg:hover .main-body {
+    fill: var(--heart-color);
+  }
+
+  svg:active .core{
+    --core-color:red;
+  }
+  
+  svg:active .main-body{
+    --heart-color:red;
+  }
 }
 
+.like-icon.is-liked .heart {
+  animation:pulse 0.3s ease-in 0.1s;
+} */
+
+/* старый способ анимации */
+
 @keyframes pulse {
-  from{
+  from {
     transform: scale(1);
     transform-origin: center;
   }
-  to{
+  to {
     transform: scale(1.4);
     transform-origin: center;
   }
 }
 
-.like-icon.is-liked .sparks{
-  animation:sparks 0.3s ease-in 0.3s;
-}
-
 @keyframes sparks {
-  30%{
-    fill:none;
+  30% {
+    fill: none;
   }
-  50%{
-    fill:var(--sparks-color);
+  50% {
+    fill: var(--sparks-color);
   }
 }

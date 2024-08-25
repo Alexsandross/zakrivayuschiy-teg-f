@@ -22,6 +22,11 @@
   --button-color:#ff0070;
   --hover-effect:rgba(255, 0, 112, 0.4);
   --favicon-color:#000000;
+  --icon-fill-color: black;
+  --invert-text:#ffffff;
+  --core-color:#ffffff;
+  --contour-color:#000000;
+  --sparks-color:red;
 }
 
 
@@ -42,6 +47,11 @@
   --button-color:#ff0070;
   --hover-effect:rgba(255, 0, 112, 0.4);
   --favicon-color:#00CC14;
+  --invert-text:#00CC14;
+  --icon-fill-color: #00CC14;
+  --core-color:#000000;
+  --contour-color:#00CC14;
+  --sparks-color:red;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,5 +72,10 @@
   --button-color:#ff0070;
   --hover-effect:rgba(255, 0, 112, 0.4);
   --favicon-color:#00CC14;
+  --invert-text:#00CC14;
+  --icon-fill-color: #00CC14;
+  --core-color:#000000;
+  --contour-color:#00CC14;
+  --sparks-color:red;
 }  
 }

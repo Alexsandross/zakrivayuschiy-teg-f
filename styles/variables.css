@@ -1,24 +1,27 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: 'Inter-Variable';
-  --main-font-weight:400;
-  --header-font-weight:700;
-  --accent-font: 'PressStart2P';
+  --main-font: "Inter-Variable";
+  --main-font-weight: 400;
+  --header-font-weight: 700;
+  --accent-font: "PressStart2P";
   --bg-color: #ffffff;
-  --bg-gradient: 
-    repeating-linear-gradient(to right, #d3d3d3, rgb(244 152 173 / 0) 2px),
+  --bg-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      rgb(244 152 173 / 0) 2px
+    ),
     repeating-linear-gradient(#d3d3d3, rgb(244 152 173 / 0) 2px),
     linear-gradient(#e7e7e7, #1a1a1a);
-  --text-color:#000000;
-  --accent-color:0.6;
-  --logo-color:#ffffff;
-  --extra-color:#ff0070;
-  --button-color:#ff0070;
-  --hover-effect:rgba(255, 0, 112, 0.4);
-  --favicon-color:#000000;
-  --heart-color:#ffffff;
-  --core-color:#ffffff;
-  --contour-color:#000000;
-  --sparks-color:red;
+  --text-color: #000000;
+  --accent-color: 0.6;
+  --logo-color: #ffffff;
+  --extra-color: #ff0070;
+  --button-color: #ff0070;
+  --hover-effect: rgba(255, 0, 112, 0.4);
+  --favicon-color: #000000;
+  --invert-text: #ffffff;
+  --icon-fill-color: black;
+  --core-color: #ffffff;
+  --contour-color: #000000;
+  --sparks-color: red;
 }
-
