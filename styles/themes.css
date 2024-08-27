@@ -9,7 +9,7 @@
   --main-font: 'Inter-Variable';
   --main-font-weight:400;
   --header-font-weight:700;
-  --accent-font: " PressStart2P";
+  --accent-font: "PressStart2P";
   --bg-color: #ffffff;
   --bg-gradient: 
     repeating-linear-gradient(to right, #d3d3d3, rgb(244 152 173 / 0) 2px),
@@ -24,6 +24,7 @@
   --favicon-color:#000000;
   --icon-fill-color: black;
   --invert-text:#ffffff;
+  --invert-bg-color: #000000;
   --core-color:#ffffff;
   --contour-color:#000000;
   --sparks-color:red;
@@ -48,6 +49,7 @@
   --hover-effect:rgba(255, 0, 112, 0.4);
   --favicon-color:#00CC14;
   --invert-text:#00CC14;
+  --invert-bg-color: #00CC14;
   --icon-fill-color: #00CC14;
   --core-color:#000000;
   --contour-color:#00CC14;
@@ -73,6 +75,7 @@
   --hover-effect:rgba(255, 0, 112, 0.4);
   --favicon-color:#00CC14;
   --invert-text:#00CC14;
+  --invert-bg-color: #00CC14;
   --icon-fill-color: #00CC14;
   --core-color:#000000;
   --contour-color:#00CC14;

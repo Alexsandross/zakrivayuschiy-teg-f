@@ -13,72 +13,32 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-.card__like-button:focus,
-.dialog-button:focus {
+.animation-hover:focus {
   outline: none;
   box-shadow: 2px 2px 0px var(--text-color);
   transition: 0.7s ease;
 }
 
-.card__like-button:focus,
-.dialog-button:focus {
+.animation-hover:focus {
   box-shadow: 2px 2px 0px var(--text-color);
 }
 
-.dialog-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: var(--text-color);
-  transition: 0.5s ease-in-out;
-}
-
-.dialog-button:hover::after {
-  transform: scaleX(1);
-  width: 100%;
-  color: var(--invert-text);
-}
-
-.dialog-button:hover {
-  transform: scaleX(1);
-  color: var(--invert-text);
-}
-
-.card__like-button::after {
+.animation-hover::after {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--text-color);
+  background-color: var(--invert-bg-color);
   transform-origin: left;
   transition: 0.5s ease-in-out;
   transform: scaleX(0);
+  z-index: 0;
 }
 
-.card__like-button:hover::after {
+.animation-hover:hover::after {
   transform: scaleX(1);
-}
-
-.close-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: var(--text-color);
-  transition: 0.5s ease-in-out;
-}
-
-.close-button:hover::after {
-  transform: scaleX(1);
-  width: 100%;
-  color: var(--invert-text);
 }
 
 .main-body,
