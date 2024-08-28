@@ -103,7 +103,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animation-hover" type="button">
+            <button class="card__like-button button-settings" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -164,7 +164,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animation-hover" type="button">
+            <button class="card__like-button button-settings" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -223,7 +223,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animation-hover" type="button">
+            <button class="card__like-button button-settings" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -284,7 +284,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animation-hover" type="button">
+            <button class="card__like-button button-settings" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -346,7 +346,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animation-hover" type="button">
+            <button class="card__like-button button-settings" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -405,7 +405,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animation-hover" type="button">
+            <button class="card__like-button button-settings" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -468,7 +468,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animation-hover" type="button">
+            <button class="card__like-button button-settings" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -530,7 +530,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animation-hover" type="button">
+            <button class="card__like-button button-settings" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -538,7 +538,7 @@
       </ul>
       <div class="button-container">
         <button
-          class="dialog-button animation-hover"
+          class="dialog-button button-settings"
           type="button"
           onclick="window['dialog-id'].showModal();"
           aria-controls="dialog-id"
@@ -557,27 +557,27 @@
       </div>
     </main>
     <script src="./scripts/like.js"></script>
-  </body>
-  <dialog id="dialog-id" class="dialog">
-    <div class="dialog-container">
-      <svg
-        overflow="visible"
-        class="dialog-svg"
-        xmlns="http://www.w3.org/2000/svg"
-        width="40"
-        height="40"
-        viewBox="0 0 40 40"
+    <dialog id="dialog-id" class="dialog">
+      <div class="dialog-container">
+        <svg
+          overflow="visible"
+          class="dialog-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+        >
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog-paragraph">Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <button
+        class="close-button button-settings"
+        type="button"
+        onclick="window['dialog-id'].close();"
       >
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg>
-      <p class="dialog-paragraph">Вставьте дискету, чтобы продолжить</p>
-    </div>
-    <button
-      class="close-button animation-hover"
-      type="button"
-      onclick="window['dialog-id'].close();"
-    >
-      <span class="button__text">ОК</span>
-    </button>
-  </dialog>
+        <span class="button__text">ОК</span>
+      </button>
+    </dialog>
+  </body>
 </html>

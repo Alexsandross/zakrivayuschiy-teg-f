@@ -13,17 +13,17 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-.animation-hover:focus {
+.button-settings:focus {
   outline: none;
   box-shadow: 2px 2px 0px var(--text-color);
   transition: 0.7s ease;
 }
 
-.animation-hover:focus {
+.button-settings:focus {
   box-shadow: 2px 2px 0px var(--text-color);
 }
 
-.animation-hover::after {
+.button-settings::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -37,7 +37,7 @@
   z-index: 0;
 }
 
-.animation-hover:hover::after {
+.button-settings:hover::after {
   transform: scaleX(1);
 }
 
